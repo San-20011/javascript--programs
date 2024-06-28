@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function student(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        let p1 = new student('santosh', 23);
+        let p2 = new student('sai', 15);
+        let students = [p1, p2]
+        for (let p of students){
+            if (p.age > 18){
+                for(let key in p){
+                document.write(key + ":"+ p[key] + "<br>");
+                }
+                document.write("<br>");
+                
+            }
+        }
+        </script>
+</body >
+
+</html >

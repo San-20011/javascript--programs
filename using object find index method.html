@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const books=[{ title:'book a', author:'1'},
+            { title:'book b', author:'2'},
+            { title:'book c', author:'4'}       
+        ];
+        let book_enter="book b";
+        let ind=books.findIndex((b) => b.title===book_enter);
+        document.write(ind);
+
+    </script>
+</body>
+
+</html>
